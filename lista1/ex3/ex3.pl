@@ -1,0 +1,33 @@
+cls:- write('\33\[2J').
+pai(ivo,eva).
+pai(gil,raí).
+pai(gil,clô).
+pai(gil,ary).
+pai(raí,noé).
+pai(ary,gal).
+
+mãe(ana,eva).
+mãe(bia,raí).
+mãe(bia,clô).
+mãe(bia,ary).
+mãe(eva,noé).
+mãe(lia,gal).
+
+homem(ivo).
+homem(gil).
+homem(raí).
+homem(ary).
+homem(noé).
+
+mulher(ana).
+mulher(eva).
+mulher(bia).
+mulher(lia).
+mulher(gal).
+mulher(clô).
+
+gerou(X,Y) :- pai(X,Y); mãe(X,Y).
+
+feliz(X) :- gerou(X, _).
+
+casal(X, Y) :- gerou(X, Z), gerou(Y, Z), X \= Y.

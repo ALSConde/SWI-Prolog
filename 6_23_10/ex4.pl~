@@ -1,0 +1,14 @@
+:- dynamic pos/2.
+pos(robô, garagem).
+pos(tv, sala).
+
+ande(Dest) :-
+    retract(pos(robô, Origem)),
+    write('anda de '), write(Origem), write(' até '), writeln(Dest),
+    asserta(pos(robô, Dest)).
+
+
+solte(Obj) :-
+    pos(robô, Loc),
+    asserta(pos(Obj, Loc)),
+    write('solta '), writeln(Obj).

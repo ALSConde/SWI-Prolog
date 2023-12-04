@@ -1,0 +1,9 @@
+% func(Código, Nome, Salário)
+func(1, ana, 1000.90).
+func(2, bia, 1200.00).
+func(3, ivo, 903.50).
+
+% dep(Código, Nome)
+dep(1, ary).
+dep(3, raí).
+dep(3, eva).

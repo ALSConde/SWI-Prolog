@@ -1,0 +1,17 @@
+pai(ivo,eva).
+mãe(ana,eva).
+
+pai(gil,raí).
+mãe(bia,raí).
+
+pai(gil,clô).
+mãe(bia,clô).
+
+pai(gil,ary).
+mãe(bia,ary).
+
+pai(raí,noé).
+mãe(eva,noé).
+
+pai(ary,gal).
+mae(lia,gal).

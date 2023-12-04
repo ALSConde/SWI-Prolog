@@ -1,0 +1,16 @@
+estrada(A,B,25).
+estrada(A,D,23).
+estrada(B,C,19).
+estrada(B,E,32).
+estrada(C,D,14).
+estrada(C,F,28).
+estrada(D,F,30).
+estrada(E,F,26).
+
+dist(A, B, D) :-
+    estrada(A, B, D).
+
+dist(A, B, D) :-
+    estrada(A, C, D1),
+    dist(C, B, D2),
+    D is D1 + D2.
